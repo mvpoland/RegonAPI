@@ -3,13 +3,14 @@ import pathlib
 
 
 BASE_DIR = pathlib.Path(__file__).parent
+
 with open(BASE_DIR / "pypi_long.md", encoding="utf-8") as fh:
     README = fh.read()
 
 
 setuptools.setup(
     name="RegonAPI",
-    version="1.3.2",
+    version="1.3.3",
     author="Bartosz Nowakowski",
     author_email="rolzwy7@gmail.com",
     description="Python 3 API Client for Polish REGON database (Baza Internetowa Regon - BIR)",
