@@ -1,13 +1,3 @@
-"""
-    RegonAPI main client class
-"""
-
-import sys
-
-if sys.version_info[0] < 3:
-    print("Sorry. This module doesn't support Python2")
-    sys.exit(1)
-
 import logging
 
 from requests import Session
@@ -24,16 +14,10 @@ from .settings import (
     REPORTS,
     DEV_ENV_WARNINGS,
     API_KEY_TEST_ENV,
-    LOGGING_FORMAT,
 )
 
-# logger configuration
-ROOT_LOGGING_LEVEL = logging.ERROR
-LOCAL_LOGGING_LEVEL = logging.WARNING
-logging.basicConfig(format=LOGGING_FORMAT)
-logging.root.setLevel(ROOT_LOGGING_LEVEL)
-logger = logging.getLogger(__name__)
-logger.setLevel(LOCAL_LOGGING_LEVEL)
+
+logger = logging.getLogger("regionapi")
 
 
 class RegonAPI(RegonAPIOperations):
