@@ -10,7 +10,7 @@ with open(BASE_DIR / "pypi_long.md", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="RegonAPI",
-    version="1.3.3",
+    version="1.3.4",
     author="Bartosz Nowakowski",
     author_email="rolzwy7@gmail.com",
     description="Python 3 API Client for Polish REGON database (Baza Internetowa Regon - BIR)",

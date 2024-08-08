@@ -17,7 +17,7 @@ from .settings import (
 )
 
 
-logger = logging.getLogger("regionapi")
+logger = logging.getLogger("regonapi")
 
 
 class RegonAPI(RegonAPIOperations):
